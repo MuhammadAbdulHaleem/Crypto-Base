@@ -80,15 +80,17 @@ header {
 .btn-primary {
     background: var(--primary-color);
     color: black;
-    font-size: 22px;
+    padding: 10px 20px;
+    font-size: 20px;
     font-weight: 500;
+    transition: all 0.5s ease;
 }
 
 .btn-primary:hover {
     background: #00ffff !important;
     color: black !important;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+    transform: scale(1.05);
+
 }
 
 .btn-primary:focus {
@@ -99,4 +101,36 @@ header {
 .hero-input:focus{
     box-shadow: 2px 6px 8px #00ffff6b;
 }
+
+.img-fluid {
+    transition: 1s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+.bg-overlay {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    right: 26%;
+    transform: translate(0, -50%);
+    z-index: -10;
+    filter: blur(100px);  
+}
             /* Hero section End  */
+
+            /* Assets section start  */
+.bg-darkblue {
+    background-color: #07112a;
+    height: 100vh;
+}
+
+.bg-white {
+    background-color: var(--text-color);
+}
+            /* Assets section End  */
