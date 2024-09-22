@@ -7,8 +7,11 @@
     <title>Document</title>
 
     <!-- Custom css start -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+ 
     <!-- Custom css End -->
 
     <!-- Google fonts -->
@@ -23,36 +26,36 @@
 
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand ps-5 fs-4 fw-bold text-primary" href="#">CryptoBase</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Cryptocurrencies</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Wallet</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5 fs-4 fw-bold text-primary" href="#">CryptoBase</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Cryptocurrencies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Wallet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <section class="hero-section">
+        <section class="hero-section d-flex align-items-center justify-content-center">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 ">
@@ -66,7 +69,7 @@
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="position-relative">
-                            <img src="images/image-1.png" class="img-fluid d-block mx-auto">
+                            <img src="images/image-1.png" class="img-hero d-block mx-auto">
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
@@ -75,80 +78,145 @@
         </section>
 
         <!-- Section 2 assets -->
-        <section class="bg-darkblue">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <h1>Dive into Bitcoin, Ethereum and Dogecoin</h1>
-                        <p>Track your investment portfolio in real-time</p>
-                        <button class="btn btn-primary">Explore all assets</button>
+        <section class="bg-darkblue py-5 d-flex align-items-center justify-content-center">
+            <div class="container align-items-center">
+                <div class="row mb-5 align-items-center">
+                    <div class="col-12 col-lg-5 ">
+                        <h1 class=" heading-secondary pb-3">Dive into Bitcoin, Ethereum, and Dogecoin</h1>
+                        <p>Track your investment portfolio in real-time with our unique dashboard.</p>
+                        <button class="btn btn-primary btn-lg mt-3">Explore all assets</button>
                     </div>
-                    <div class="col-12 col-lg-7">     
-                        <div class="row g-5 ">
-                            <div class="col-6 col-lg-4 rounded-3 bg-white d-flex flex-column justify-content-center align-items-center ">
-                                <img src="images/bitcoin.png" alt="">
-                                <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
-                                <h6 class="text-dark fs-5">$4,136,480</h6>
-                                <div class="d-flex">
-                                    <p class="text-success fs-5">&uarr;</p>
-                                    <p class="text-success ps-1 fs-4">0.59%</p>
+                    <div class="col-12 col-lg-7">
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="card mb-4 text-center bg-white rounded-3 p-3">
+                                        <img src="images/bitcoin.png" alt="Bitcoin"
+                                            class="card-img-top mx-auto wallet-image">
+                                        <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
+                                        <h6 class="text-dark fs-5">$4,136,480</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="text-success fs-5">&uarr;</p>
+                                            <p class="text-success ps-1 fs-4">0.59%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 ">
+                                    <div class="card mb-4 text-center bg-white rounded-3 p-3">
+                                        <img src="images/eth.png" alt="Ethereum"
+                                            class="card-img-top mx-auto wallet-image">
+                                        <h3 class="text-dark fs-4 pt-2 fw-bold">Ethereum</h3>
+                                        <h6 class="text-dark fs-5">$2,450,120</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="text-success fs-5">&uarr;</p>
+                                            <p class="text-success ps-1 fs-4">1.23%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card mb-4 text-center bg-white rounded-3 p-3">
+                                        <img src="images/XRP.png" alt="XRP" class="card-img-top mx-auto wallet-image">
+                                        <h3 class="text-dark fs-4 pt-2 fw-bold">XRP</h3>
+                                        <h6 class="text-dark fs-5">$0.78</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="text-danger fs-5">&darr;</p>
+                                            <p class="text-danger ps-1 fs-4">-0.34%</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4 rounded-3 bg-white d-flex flex-column justify-content-center align-items-center">
-                                <img src="images/bitcoin.png" alt="">
-                                <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
-                                <h6 class="text-dark fs-5">$4,136,480</h6>
-                                <div class="d-flex">
-                                    <p class="text-success fs-5">&uarr;</p>
-                                    <p class="text-success ps-1 fs-4">0.59%</p>
+
+                            <div class="row">
+                                <div class="col-12 col-lg-4">
+                                    <div class="card mb-4 text-center bg-white rounded-3 p-3">
+                                        <img src="images/teth.png" alt="Tehter"
+                                            class="card-img-top mx-auto wallet-image">
+                                        <h3 class="text-dark fs-4 pt-2 fw-bold">Tether</h3>
+                                        <h6 class="text-dark fs-5">$120.45</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="text-success fs-5">&uarr;</p>
+                                            <p class="text-success ps-1 fs-4">2.15%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card mb-4 text-center bg-white rounded-3 p-3">
+                                        <img src="images/usdc.png" alt="USDC" class="card-img-top mx-auto wallet-image">
+                                        <h3 class="text-dark fs-4 pt-2 fw-bold">USDC</h3>
+                                        <h6 class="text-dark fs-5">$0.35</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="text-danger fs-5">&darr;</p>
+                                            <p class="text-danger ps-1 fs-4">-1.10%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="card mb-4 text-center bg-white rounded-3 p-3">
+                                        <img src="images/solana.png" alt="Solana"
+                                            class="card-img-top mx-auto wallet-image">
+                                        <h3 class="text-dark fs-4 pt-2 fw-bold">Solana</h3>
+                                        <h6 class="text-dark fs-5">$45.20</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <p class="text-success fs-5">&uarr;</p>
+                                            <p class="text-success ps-1 fs-4">3.45%</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-lg-4 rounded-3 bg-white d-flex flex-column justify-content-center align-items-center">
-                                <img src="images/bitcoin.png" alt="">
-                                <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
-                                <h6 class="text-dark fs-5">$4,136,480</h6>
-                                <div class="d-flex">
-                                    <p class="text-success fs-5">&uarr;</p>
-                                    <p class="text-success ps-1 fs-4">0.59%</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-4 rounded-3 bg-white d-flex flex-column justify-content-center align-items-center">
-                                <img src="images/bitcoin.png" alt="">
-                                <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
-                                <h6 class="text-dark fs-5">$4,136,480</h6>
-                                <div class="d-flex">
-                                    <p class="text-success fs-5">&uarr;</p>
-                                    <p class="text-success ps-1 fs-4">0.59%</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-4 rounded-3 bg-white d-flex flex-column justify-content-center align-items-center">
-                                <img src="images/bitcoin.png" alt="">
-                                <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
-                                <h6 class="text-dark fs-5">$4,136,480</h6>
-                                <div class="d-flex">
-                                    <p class="text-success fs-5">&uarr;</p>
-                                    <p class="text-success ps-1 fs-4">0.59%</p>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-4 rounded-3 bg-white d-flex flex-column justify-content-center align-items-center">
-                                <img src="images/bitcoin.png" alt="">
-                                <h3 class="text-dark fs-4 pt-2 fw-bold">Bitcoin</h3>
-                                <h6 class="text-dark fs-5">$4,136,480</h6>
-                                <div class="d-flex">
-                                    <p class="text-success fs-5">&uarr;</p>
-                                    <p class="text-success ps-1 fs-4">0.59%</p>
-                                </div>
-                            </div>
-                        </div>                   
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Section 2 end -->
-    </main>
 
+        <!-- Section Reason -->
+        <section class="reason-section d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 ">
+                        <h1 class="heading-secondary pb-5">Reason to invest in crypto in 2024</h1>
+                        <ul class="reason-ul">
+                            <li class="reason-li">
+                                <div class="icon-head d-flex flex-start ">
+                                    <span class="custom-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                    <h5 class="ps-2">Growing Institutional Adoption</h5>
+                                </div>
+                                <p class="ps-5">Major financial institutions are increasingly embracing cryptocurrencies, enhancing market stability.</p>
+                            </li>
+                            <li class="reason-li">
+                                <div class="icon-head d-flex flex-start ">
+                                    <span class="custom-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                    <h5 class="ps-2">Potential for High Returns</h5>
+                                </div>
+                                <p class="ps-5">Investing in cryptocurrencies can offer significant returns, especially with emerging projects.</p>
+                            </li>
+                            <li class="reason-li">
+                                <div class="icon-head d-flex flex-start ">
+                                    <span class="custom-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                    <h5 class="ps-2">Decentralization and Control</h5>
+                                </div>
+                                <p class="ps-5">Cryptocurrencies provide users with greater control over their assets compared to traditional finance.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="position-relative">
+                            <img src="images/hero.webp" class="img-hero d-block mx-auto reason-img">
+                            <div class="bg-overlay2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Reason end -->
+    </main>
+    <footer >
+        <p class="d-flex align-items-center justify-content-center m-0">CryptoBase &copy; 2024. All rights reserved.</p>
+    </footer>
     <!-- Bootsrap js link -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <!-- Bootsrap js link -->
 
 </body>

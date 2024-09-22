@@ -14,7 +14,7 @@ body {
     line-height: 1;
 }
 
-        /* Header */
+/* Header */
 
 header {
     padding: 10px 0;
@@ -23,10 +23,20 @@ header {
 
 .nav-link.active,
 .nav-link:active {
-    color: var(--primary-color)!important;
+    color: var(--primary-color) !important;
 }
 
-.nav-link:link , 
+.navbar-toggler,
+.navbar-toggler-icon {
+    color: var(--text-color) !important;
+}
+
+.navbar-toggler-icon:hover,
+.navbar-toggler-icon:focus {
+    color: var(--text-color) !important;
+}
+
+.nav-link:link,
 .nav-link:visited {
     color: var(--text-color-2);
     font-size: 18px;
@@ -37,19 +47,20 @@ header {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--primary-color) ;
+    color: var(--primary-color);
 }
 
 .text-primary {
     color: var(--primary-color) !important;
 }
 
-            /* Header End */
+/* Header End */
 
-            /* Hero section */
+/* Hero section */
 
-.hero-section{
-    height: 90vh;
+.hero-section {
+    min-height: 90vh;
+    width: 100%;
 }
 
 .heading-primary {
@@ -84,29 +95,36 @@ header {
     font-size: 20px;
     font-weight: 500;
     transition: all 0.5s ease;
+    border-color: var(--primary-color) !important;
 }
 
 .btn-primary:hover {
     background: #00ffff !important;
     color: black !important;
     transform: scale(1.05);
+    border-color: var(--primary-color) !important;
 
 }
 
 .btn-primary:focus {
     background: #00ffffe0 !important;
     color: black !important;
+    border-color: var(--primary-color) !important;
 }
 
-.hero-input:focus{
+.btn-primary:active {
+    border-color: var(--primary-color) !important;
+}
+
+.hero-input:focus {
     box-shadow: 2px 6px 8px #00ffff6b;
 }
 
-.img-fluid {
+.img-hero {
     transition: 1s;
 }
 
-.img-fluid:hover {
+.img-hero:hover {
     transform: scale(1.05);
 }
 
@@ -120,17 +138,79 @@ header {
     right: 26%;
     transform: translate(0, -50%);
     z-index: -10;
-    filter: blur(100px);  
+    filter: blur(100px);
 }
-            /* Hero section End  */
 
-            /* Assets section start  */
+/* Hero section End  */
+
+/* Assets section start  */
 .bg-darkblue {
-    background-color: #07112a;
-    height: 100vh;
+    min-height: 100vh !important;
+    width: 100vw;
+    background-color: #090e29;
 }
 
-.bg-white {
-    background-color: var(--text-color);
+.card {
+    height: 250px;
+    transition: all 0.3s linear;
 }
-            /* Assets section End  */
+
+.card>img {
+    height: 100px;
+    width: 100px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Assets section End  */
+
+/* Reason section start  */
+.reason-section {
+    min-height: 100vh;
+}
+.reason-ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.reason-li {
+    padding-bottom: 15px;
+}
+
+.custom-icon {
+    margin-right: 10px; 
+}
+
+.custom-icon i {
+    font-size: 24px; 
+}
+
+.reason-img {
+    height: 500px;
+    width: 300px;
+}
+
+.bg-overlay2 {
+    position: absolute;
+    height: 350px;
+    width: 200px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    right: 35%;
+    transform: translate(0, -50%);
+    z-index: -10;
+    filter: blur(100px);
+}
+/* Reason section End  */
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #090e29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
