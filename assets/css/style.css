@@ -121,6 +121,7 @@ header {
 }
 
 .img-hero {
+    width: 70%;
     transition: 1s;
 }
 
